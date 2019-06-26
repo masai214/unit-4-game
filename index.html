@@ -21,7 +21,7 @@
     </div>
     <div class="container">
         <div class="row">
-            <div class="instructions col-md-4 bg-warning">
+            <div class="instructions col-md-12 bg-warning">
                 <h4>You will be given a random number at the start of the game.</h4>
                 <br>
                 <h4>There are four crystals below. By clicking
@@ -37,23 +37,40 @@
                 <h4>Each time the game starts, the game will change the value of each crystal.</h4>
 
             </div>
-            
-            <div class="random-number col-md-2 bg-warning">
-                <h1>65</h1>
-            </div>
-            <div class="records col-md-4 bg-warning">
-                    <h2>wins:</h2>
-                    <br>
-                    <h2>losses:</h2>
-                </div>
-            
         </div>
 
     </div>
 
+    <div class="container">
+        <div class="row">
+            <div class="random-number col-sm-2 bg-warning">
+                <h1><span id="computer-score"></span></h1>
 
+            </div>
+            <div class="records col-sm-4 bg-warning">
+                <div class="wins"><h2>wins: </h2><span id="wins"></span></div>
+                <br>
+                <div class="losses"><h2>losses: </h2><span id="losses"></span></div>
 
-
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="total-score col-sm-2 bg-primary">
+                <h4>Your total score is :</h4>
+            </div>
+            <div class="crystals col-sm-2 bg-primary">
+                <img src="./assets/images/blue.png" id="blue-jewel" alt="blue jewel" class=" jewel border border-dark">
+                <img src="./assets/images/red.png" id="red-jewel" alt="red jewel" class=" jewel border border-dark">
+                <img src="./assets/images/green.png" id="green-jewel" alt="green jewel" class=" jewel border border-dark">
+                <img src="./assets/images/yellow.png" id="yellow-jewel" alt="yellow jewel" class=" jewel border border-dark">
+            </div>
+        </div>
+        
+        
+        <script src="assets/javascript/game.js"></script>
 
 </body>
 
